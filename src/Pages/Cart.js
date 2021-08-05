@@ -1,8 +1,27 @@
-function Cart() {
+/* ------------------------------ imports ------------------------------ */
+// style
+import styled from 'styled-components';
+// components
+import CartItem from '../Components/CartItem';
+/* -------------------------- styled-component ------------------------- */
+const ShoppingCart = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const EmptyCart = styled.div``;
+/* ----------------------------- component ----------------------------- */
+function Cart({ cart, removeItem }) {
+  const shoppedItems = cart.map((item) => (
+    <CartItem item={item} removeItem={removeItem} key={item.id} />
+  ));
   return (
-    <div>
-      <h2>Shopping Cart</h2>
-    </div>
+    <ShoppingCart>
+      <h2>SHOPPING CART</h2>
+      {cart.length ? shoppedItems : <p>Empty! Add some colors!</p>}
+    </ShoppingCart>
   );
 }
 

@@ -1,32 +1,62 @@
+/* ---------------------------- imports --------------------------- */
+// style
+import styled from 'styled-components';
+// react-router
 import { Link } from 'react-router-dom';
-
-function Header() {
+/* ----------------------- styled-components ---------------------- */
+const PageHeader = styled.header`
+  text-align: center;
+`;
+const NavMenu = styled.menu`
+  margin: auto;
+  padding: 0;
+  text-align: center;
+`;
+const Navbar = styled.ul`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+`;
+const MenuItem = styled.li`
+  padding: 2px 10px;
+  margin: 0;
+  font-size: 1.05em;
+  color: darkgrey;
+`;
+/* --------------------------- component -------------------------- */
+function Header({ cartSize }) {
   return (
     <div>
-      <header>
+      <PageHeader>
         <h1>This is a Header</h1>
         <nav>
-          <menu>
-            <ul>
+          <NavMenu>
+            <Navbar>
               <Link to="/">
-                <li>Home</li>
+                <MenuItem>Home</MenuItem>
               </Link>
               <Link to="/About">
-                <li>About</li>
+                <MenuItem>About</MenuItem>
               </Link>
               <Link to="/Products">
-                <li>Products</li>
+                <MenuItem>Products</MenuItem>
               </Link>
               <Link to="/Careers">
-                <li>Careers</li>
+                <MenuItem>Careers</MenuItem>
               </Link>
               <Link to="/Cart">
-                <li>Cart</li>
+                <MenuItem>
+                  Cart {cartSize > 0 ? <span>({cartSize})</span> : null}
+                </MenuItem>
               </Link>
-            </ul>
-          </menu>
+            </Navbar>
+          </NavMenu>
         </nav>
-      </header>
+      </PageHeader>
     </div>
   );
 }
