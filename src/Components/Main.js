@@ -13,7 +13,7 @@ function Main({ cart, addItem, removeItem }) {
           <About />
         </Route>
         <Route exact path="/Cart">
-          <Cart cart={cart} removeItem={removeItem} />
+          <Cart cart={cart} addItem={addItem} removeItem={removeItem} />
         </Route>
         <Route exact path="/Products">
           <Products addItem={addItem} />

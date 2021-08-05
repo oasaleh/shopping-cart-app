@@ -32,12 +32,26 @@ const WantedItemInfo = styled.div`
 `;
 const RemoveButton = styled.button``;
 /* --------------------------- component -------------------------- */
-function CartItem({ item, removeItem }) {
+function CartItem({ item, addItem, removeItem }) {
+  function handleChange(event, item) {
+    if (event.target.value > item.quantity) {
+      addItem(item);
+    } else {
+      removeItem(item);
+    }
+  }
   return (
     <WantedItem>
       <WantedItemImg color={item.name} />
       <WantedItemInfo>
         <p>{item.name}</p>
+        <input
+          type="number"
+          min="1"
+          max="99"
+          value={item.quantity}
+          onChange={(e) => handleChange(e, item)}
+        />
         <RemoveButton onClick={() => removeItem(item)}>
           Remove Item
         </RemoveButton>

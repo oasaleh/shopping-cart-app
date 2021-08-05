@@ -2,7 +2,7 @@
 // style
 import styled from 'styled-components';
 // components
-import ItemCard from '../Components/ItemCard';
+import ItemCard from '../Components/ProductCard';
 // data
 import items from '../Items';
 /* ------------------------- styled-components ------------------------- */

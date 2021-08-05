@@ -13,9 +13,14 @@ const ShoppingCart = styled.div`
 
 const EmptyCart = styled.div``;
 /* ----------------------------- component ----------------------------- */
-function Cart({ cart, removeItem }) {
+function Cart({ cart, addItem, removeItem }) {
   const shoppedItems = cart.map((item) => (
-    <CartItem item={item} removeItem={removeItem} key={item.id} />
+    <CartItem
+      item={item}
+      addItem={addItem}
+      removeItem={removeItem}
+      key={item.id}
+    />
   ));
   return (
     <ShoppingCart>
