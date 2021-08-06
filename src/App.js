@@ -22,7 +22,7 @@ function App() {
   //       // setting the state of welcomeMessage to "Welcome back!" if it does
   //     setWelcomeMessage("Welcome back!")
   //   } else {
-  //       // creating the "hasVisited" key value pair in localStorage if it doesnt exist
+  //       // creating the "hasVisited" key value pair in localStorage if it doesn't exist
   //     localStorage.setItem("hasVisited", "true")
   //   }
   //   // we are only running this useEffect on the first render of app because we passed an
