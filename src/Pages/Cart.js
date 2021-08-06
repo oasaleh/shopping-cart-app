@@ -26,6 +26,12 @@ function Cart({ cart, addItem, removeItem }) {
     <ShoppingCart>
       <h2>SHOPPING CART</h2>
       {cart.length ? shoppedItems : <p>Empty! Add some colors!</p>}
+      <p>
+        Total:{' $'}
+        {cart
+          .reduce((total, item) => total + item.price * item.quantity, 0)
+          .toFixed(2)}
+      </p>
     </ShoppingCart>
   );
 }

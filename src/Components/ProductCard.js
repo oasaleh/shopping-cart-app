@@ -20,11 +20,12 @@ const Title = styled.h1`
 `;
 const AddToCartButton = styled.button``;
 /* ----------------------------- component ----------------------------- */
-function ItemCard({ item, addItem }) {
+function ItemCard({ item, price, addItem }) {
   return (
     <ProductCard>
       <img src="" alt="productImg" />
       <Title textColor={item.name}>This is a product</Title>
+      <p>${item.price}</p>
       {/* why do I have to make it an anonymous function inside onClick? */}
       <AddToCartButton onClick={() => addItem({...item, quantity: 1})}>
         Add to Cart

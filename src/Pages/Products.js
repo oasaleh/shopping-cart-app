@@ -17,7 +17,7 @@ const ShowCase = styled.div`
 /* ----------------------------- component ----------------------------- */
 function Products({ addItem }) {
   const products = items.map((item) => (
-    <ItemCard item={item} addItem={addItem} key={item.id} />
+    <ItemCard item={item} addItem={addItem} price={item.price} key={item.id} />
   ));
   return <ShowCase>{products}</ShowCase>;
 }

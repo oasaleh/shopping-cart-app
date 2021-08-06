@@ -15,10 +15,23 @@ function App() {
   // initialize cart and set it to an empty array of objects.
   const [cart, updateCart] = useState([]);
 
+  // use localStorage
+  // useEffect(() => {
+  //   // checking if localStorage has a "hasVisited" key
+  //   if (localStorage.getItem("cart")){
+  //       // setting the state of welcomeMessage to "Welcome back!" if it does
+  //     setWelcomeMessage("Welcome back!")
+  //   } else {
+  //       // creating the "hasVisited" key value pair in localStorage if it doesnt exist
+  //     localStorage.setItem("hasVisited", "true")
+  //   }
+  //   // we are only running this useEffect on the first render of app because we passed an
+  //   // empty array
+  // },[])
+
   // adds item to shopping cart.
   function addItem(item) {
     const itemIndex = cart.findIndex((cartItem) => cartItem.id === item.id);
-
     // if the item does not exist in cart
     if (itemIndex === -1) {
       updateCart([...cart, item]);
@@ -47,7 +60,9 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header cartSize={cart.length} />
+        <Header
+          cartSize={cart.reduce((total, item) => total + item.quantity, 0)}
+        />
         <Main cart={cart} addItem={addItem} removeItem={removeItem} />
         <Footer />
       </div>
