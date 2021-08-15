@@ -59,7 +59,15 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div
+        style={{
+          height: '89%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+        }}
+        className="App"
+      >
         <Header
           cartSize={cart.reduce((total, item) => total + item.quantity, 0)}
         />
