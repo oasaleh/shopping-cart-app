@@ -4,7 +4,7 @@ import github from '../assets/github.png';
 const PageFooter = styled.footer`
   /* margin-top: auto; */
   width: 100%;
-  height: 100px;
+  height: 80px;
   text-align: center;
   margin-bottom: -100px;
 `;
@@ -12,7 +12,7 @@ const PageFooter = styled.footer`
 function Footer() {
   return (
     <PageFooter>
-      <a href="https://github.com/oasaleh/waldo">
+      <a href="https://github.com/oasaleh/shopping-cart-app">
         <img
           style={{ width: '24px', paddingTop: '40px' }}
           src={github}

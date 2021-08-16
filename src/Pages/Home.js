@@ -19,14 +19,21 @@ const PunchLine = styled.p`
   text-transform: capitalize;
   /* padding: 30px 20px; */
   @media (max-width: 1000px) {
-    padding: 30px 20px;
+    /* padding: 30px 20px; */
+    font-size: 2em;
+  }
+`;
+const PictureFrame = styled.picture`
+  min-width: 311px;
+  @media (max-width: 1000px) {
+    min-width: 150px;
   }
 `;
 const Home = () => (
   <MainPage>
-    <picture style={{ width: '40%', minWidth: '311px' }}>
+    <PictureFrame style={{ width: '50%' }}>
       <img style={{ width: '100%' }} src={Logo} alt="squareLogo" />
-    </picture>
+    </PictureFrame>
     <PunchLine>Buy your square now!</PunchLine>
   </MainPage>
 );
