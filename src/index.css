@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  height: 97vh;
 }
 body {
   margin: 0;
@@ -18,7 +18,7 @@ body {
 }
 #root {
   width: 100%;
-  height: 96%;
+  height: 100%;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

@@ -15,7 +15,6 @@ function Main({ cart, addItem, removeItem }) {
         justifyContent: 'center',
         alignItems: 'center',
         maxWidth: '1500px',
-        margin: '0',
         height: '100%',
       }}
       className="mainWindow"

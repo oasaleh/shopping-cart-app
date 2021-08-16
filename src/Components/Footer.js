@@ -4,7 +4,7 @@ import github from '../assets/github.png';
 const PageFooter = styled.footer`
   /* margin-top: auto; */
   width: 100%;
-  height: 40px;
+  height: 70px;
   text-align: center;
   margin-bottom: -100px;
 `;
