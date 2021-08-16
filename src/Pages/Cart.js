@@ -1,4 +1,5 @@
 /* ------------------------------ imports ------------------------------ */
+import { useState } from 'react';
 // style
 import styled from 'styled-components';
 // components
@@ -7,8 +8,9 @@ import CartItem from '../Components/CartItem';
 const ShoppingCart = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  height: 100%;
 `;
 const BuyButton = styled.button`
   width: 90px;
@@ -22,8 +24,22 @@ const BuyButton = styled.button`
   }
 `;
 const EmptyCart = styled.div``;
+const Message = styled.p`
+  margin: 0 auto;
+  padding: 3px;
+  font-size: 12px;
+`;
 /* ----------------------------- component ----------------------------- */
 function Cart({ cart, addItem, removeItem }) {
+  const [buyMessage, setBuyMessage] = useState(false);
+
+  function handleClick() {
+    setBuyMessage(true);
+    setTimeout(hideMessage, 3000);
+  }
+  function hideMessage() {
+    setBuyMessage(false);
+  }
   const shoppedItems = cart.map((item) => (
     <CartItem
       item={item}
@@ -34,7 +50,7 @@ function Cart({ cart, addItem, removeItem }) {
   ));
   return (
     <ShoppingCart>
-      <h2 style={{ fontWeight: '800', fontSize: '1.8em' }}>SHOPPING CART</h2>
+      <h2 style={{ fontWeight: '800', fontSize: '1.2em' }}>SHOPPING CART</h2>
       {cart.length ? shoppedItems : <p>Empty! Add some squares!</p>}
       <p>
         Total:{' $'}
@@ -42,8 +58,16 @@ function Cart({ cart, addItem, removeItem }) {
           .reduce((total, item) => total + item.price * item.quantity, 0)
           .toFixed(2)}
       </p>
-
-      <BuyButton>Buy</BuyButton>
+      <div>
+        <BuyButton onClick={handleClick}>Buy</BuyButton>
+        <Message
+          style={
+            buyMessage ? { visibility: 'visible' } : { visibility: 'hidden' }
+          }
+        >
+          You're not going to buy fake squares, are you? 🤦‍♂️
+        </Message>
+      </div>
     </ShoppingCart>
   );
 }
