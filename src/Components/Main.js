@@ -7,7 +7,16 @@ import Products from '../Pages/Products';
 
 function Main({ cart, addItem, removeItem }) {
   return (
-    <div className="mainWindow">
+    <div
+      style={{
+        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+      className="mainWindow"
+    >
       <Switch>
         <Route exact path="/About">
           <About />
