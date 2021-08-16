@@ -46,10 +46,10 @@ function Header({ cartSize }) {
       <PageHeader>
         <h1
           style={{
-            backgroundColor: '#CBEEC5',
+            backgroundColor: '#F7D6CD',
             width: 'fit-content',
             margin: '20px auto 20px auto',
-            padding: '7px',
+            padding: '7px 9px',
             borderRadius: '6px',
           }}
         >

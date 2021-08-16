@@ -13,6 +13,7 @@ const ShowCase = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-width: 1200px;
 `;
 /* ----------------------------- component ----------------------------- */
 function Products({ addItem }) {

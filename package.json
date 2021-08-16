@@ -1,6 +1,7 @@
 {
-  "name": "shopping-cart-app",
+  "name": "square-shop",
   "version": "0.1.0",
+  "homepage": "https://oasaleh.github.io/square-shop/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -20,6 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -51,7 +54,8 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.2.3"
   },
   "resolutions": {
     "styled-components": "^5"

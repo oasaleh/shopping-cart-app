@@ -14,6 +14,8 @@ function Main({ cart, addItem, removeItem }) {
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
+        maxWidth: '1500px',
+        margin: 'auto',
       }}
       className="mainWindow"
     >
@@ -30,7 +32,7 @@ function Main({ cart, addItem, removeItem }) {
         <Route exact path="/Careers">
           <Careers />
         </Route>
-        <Route exact path="/">
+        <Route path="/">
           <Home />
         </Route>
       </Switch>
