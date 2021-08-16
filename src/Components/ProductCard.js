@@ -14,6 +14,8 @@ const ProductCard = styled.div`
   margin: 10px;
   padding: 15px;
   border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.2) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 4px 2px;
 `;
 const Title = styled.h1`
   font-size: 1em;

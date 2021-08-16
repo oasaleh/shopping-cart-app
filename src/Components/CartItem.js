@@ -26,12 +26,15 @@ const ItemImage = styled.div`
 const ItemDetails = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: auto;
-
+  margin: 0;
+  padding: 8px 0;
+  & > * {
+    margin: 4px;
+  }
   & > p {
-    margin: 0;
+    /* margin: 0; */
   }
 `;
 const Counter = styled.div`
@@ -40,10 +43,11 @@ const Counter = styled.div`
   flex-wrap: nowrap;
   text-align: center;
   align-items: center;
-
+  & > * {
+  }
   & > input {
-    margin: 0 8px;
-    padding: 4px 6px;
+    margin: 0 0px;
+    padding: 4px 5px;
     border: 2px solid var(--black);
     border-radius: 3px;
     text-align: center;
