@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/oasaleh/square-shop/static/css/main.b1e579e2.chunk.css",
-    "main.js": "/oasaleh/square-shop/static/js/main.c4fb91fe.chunk.js",
-    "main.js.map": "/oasaleh/square-shop/static/js/main.c4fb91fe.chunk.js.map",
-    "runtime-main.js": "/oasaleh/square-shop/static/js/runtime-main.9fc74ea9.js",
-    "runtime-main.js.map": "/oasaleh/square-shop/static/js/runtime-main.9fc74ea9.js.map",
-    "static/js/2.4b4ce6a2.chunk.js": "/oasaleh/square-shop/static/js/2.4b4ce6a2.chunk.js",
-    "static/js/2.4b4ce6a2.chunk.js.map": "/oasaleh/square-shop/static/js/2.4b4ce6a2.chunk.js.map",
-    "static/js/3.3211bde0.chunk.js": "/oasaleh/square-shop/static/js/3.3211bde0.chunk.js",
-    "static/js/3.3211bde0.chunk.js.map": "/oasaleh/square-shop/static/js/3.3211bde0.chunk.js.map",
-    "index.html": "/oasaleh/square-shop/index.html",
-    "static/css/main.b1e579e2.chunk.css.map": "/oasaleh/square-shop/static/css/main.b1e579e2.chunk.css.map",
-    "static/js/2.4b4ce6a2.chunk.js.LICENSE.txt": "/oasaleh/square-shop/static/js/2.4b4ce6a2.chunk.js.LICENSE.txt",
-    "static/media/squareLogo.72771e06.png": "/oasaleh/square-shop/static/media/squareLogo.72771e06.png"
+    "main.css": "/square-shop/static/css/main.b1e579e2.chunk.css",
+    "main.js": "/square-shop/static/js/main.06e462cc.chunk.js",
+    "main.js.map": "/square-shop/static/js/main.06e462cc.chunk.js.map",
+    "runtime-main.js": "/square-shop/static/js/runtime-main.76a29a58.js",
+    "runtime-main.js.map": "/square-shop/static/js/runtime-main.76a29a58.js.map",
+    "static/js/2.9159ab39.chunk.js": "/square-shop/static/js/2.9159ab39.chunk.js",
+    "static/js/2.9159ab39.chunk.js.map": "/square-shop/static/js/2.9159ab39.chunk.js.map",
+    "static/js/3.4d8883e0.chunk.js": "/square-shop/static/js/3.4d8883e0.chunk.js",
+    "static/js/3.4d8883e0.chunk.js.map": "/square-shop/static/js/3.4d8883e0.chunk.js.map",
+    "index.html": "/square-shop/index.html",
+    "static/css/main.b1e579e2.chunk.css.map": "/square-shop/static/css/main.b1e579e2.chunk.css.map",
+    "static/js/2.9159ab39.chunk.js.LICENSE.txt": "/square-shop/static/js/2.9159ab39.chunk.js.LICENSE.txt",
+    "static/media/squareLogo.72771e06.png": "/square-shop/static/media/squareLogo.72771e06.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9fc74ea9.js",
-    "static/js/2.4b4ce6a2.chunk.js",
+    "static/js/runtime-main.76a29a58.js",
+    "static/js/2.9159ab39.chunk.js",
     "static/css/main.b1e579e2.chunk.css",
-    "static/js/main.c4fb91fe.chunk.js"
+    "static/js/main.06e462cc.chunk.js"
   ]
 }
