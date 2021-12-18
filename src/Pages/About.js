@@ -1,12 +1,6 @@
 /* eslint-disable arrow-body-style */
 import styled from 'styled-components';
-import {
-  FaGithub,
-  FaFacebookMessenger,
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-} from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -54,14 +48,14 @@ const SocialMedia = styled.div`
   }
 `;
 
-const ContactInfo = styled.div`
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  @media (max-width: 768px) {
-    font-size: 2.4rem;
-  }
-`;
+// const ContactInfo = styled.div`
+//   font-size: 3rem;
+//   font-weight: bold;
+//   text-align: center;
+//   @media (max-width: 768px) {
+//     font-size: 2.4rem;
+//   }
+// `;
 
 const SocialLink = styled.a`
   cursor: pointer;

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* ---------------------------- imports --------------------------- */
 // style
 import styled from 'styled-components';
@@ -72,13 +73,13 @@ const MinusIcon = styled(MinusCircle)``;
 const RemoveButton = styled.button``;
 /* --------------------------- component -------------------------- */
 function CartItem({ item, addItem, removeItem }) {
-  function handleChange(event, item) {
+  function handleChange(event, product) {
     // console.log(event)
     // event.nativeEvent.data
-    if (event.target.value > item.quantity) {
-      addItem(item);
+    if (event.target.value > product.quantity) {
+      addItem(product);
     } else {
-      removeItem(item);
+      removeItem(product);
     }
   }
   return (

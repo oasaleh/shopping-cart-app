@@ -8,6 +8,7 @@ const CareerPage = styled.div`
   height: 100%;
 `;
 const JobCard = styled.div`
+  margin: 10px;
   text-align: left;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -30,6 +31,15 @@ const Careers = () => (
       </p>
       <p style={{ fontSize: '.8em' }}>
         We desperately need a developer to polish our website..
+      </p>
+    </JobCard>
+    <JobCard>
+      <p style={{ fontWeight: '700', textDecoration: 'underline' }}>
+        Software Engineer
+      </p>
+      <p style={{ fontSize: '.8em' }}>
+        We need a software engineer to add functionality to <i>Remove Item</i>{' '}
+        button in cart. <em>This is a to-do.</em>
       </p>
     </JobCard>
   </CareerPage>

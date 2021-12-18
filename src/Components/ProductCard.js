@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const ProductCard = styled.div`
   width: 170px;
   height: 210px;
-  border: 0.5px solid #353535;
+  border: 0.5px solid #lightgray;
   display: flex;
   flex-direction: column;
   justify-content: center;

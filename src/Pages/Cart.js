@@ -23,7 +23,6 @@ const BuyButton = styled.button`
     background-color: #dae5e5;
   }
 `;
-const EmptyCart = styled.div``;
 const Message = styled.p`
   margin: 0 auto;
   padding: 3px;
@@ -65,7 +64,7 @@ function Cart({ cart, addItem, removeItem }) {
             buyMessage ? { visibility: 'visible' } : { visibility: 'hidden' }
           }
         >
-          You're not going to buy fake squares, are you? 🤦‍♂️
+          You are not going to buy fake squares, are you? 🤦‍♂️
         </Message>
       </div>
     </ShoppingCart>

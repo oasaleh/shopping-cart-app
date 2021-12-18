@@ -1,6 +1,6 @@
 /* ------------------------------ imports ------------------------------ */
 // react
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 // react-router
 import { BrowserRouter as Router } from 'react-router-dom';
