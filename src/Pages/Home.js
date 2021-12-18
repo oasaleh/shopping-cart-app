@@ -1,6 +1,17 @@
 import styled from 'styled-components';
 import Logo from '../assets/squareLogo.png';
 
+/* -------------------------------- component ------------------------------- */
+const Home = () => (
+  <MainPage>
+    <PictureFrame style={{ width: '50%' }}>
+      <img style={{ width: '100%' }} src={Logo} alt="squareLogo" />
+    </PictureFrame>
+    <PunchLine>Buy your square now!</PunchLine>
+  </MainPage>
+);
+export default Home;
+/* ---------------------------------- style --------------------------------- */
 const MainPage = styled.div`
   display: flex;
   flex-direction: row;
@@ -29,12 +40,3 @@ const PictureFrame = styled.picture`
     min-width: 150px;
   }
 `;
-const Home = () => (
-  <MainPage>
-    <PictureFrame style={{ width: '50%' }}>
-      <img style={{ width: '100%' }} src={Logo} alt="squareLogo" />
-    </PictureFrame>
-    <PunchLine>Buy your square now!</PunchLine>
-  </MainPage>
-);
-export default Home;

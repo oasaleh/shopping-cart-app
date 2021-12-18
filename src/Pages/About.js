@@ -1,7 +1,7 @@
 /* eslint-disable arrow-body-style */
 import styled from 'styled-components';
 import { FaGithub } from 'react-icons/fa';
-
+/* -------------------------------- component ------------------------------- */
 const Contact = () => {
   return (
     <ContactWrapper>
@@ -13,7 +13,7 @@ const Contact = () => {
     </ContactWrapper>
   );
 };
-
+/* ---------------------------------- style --------------------------------- */
 const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -47,15 +47,6 @@ const SocialMedia = styled.div`
     font-size: 5rem;
   }
 `;
-
-// const ContactInfo = styled.div`
-//   font-size: 3rem;
-//   font-weight: bold;
-//   text-align: center;
-//   @media (max-width: 768px) {
-//     font-size: 2.4rem;
-//   }
-// `;
 
 const SocialLink = styled.a`
   cursor: pointer;

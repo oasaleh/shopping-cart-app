@@ -4,30 +4,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 // components
 import CartItem from '../Components/CartItem';
-/* -------------------------- styled-component ------------------------- */
-const ShoppingCart = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-`;
-const BuyButton = styled.button`
-  width: 90px;
-  height: 25px;
-  background-color: #cceec4;
-  border-radius: 8px;
-  border: 0px;
-  :hover {
-    cursor: pointer;
-    background-color: #dae5e5;
-  }
-`;
-const Message = styled.p`
-  margin: 0 auto;
-  padding: 3px;
-  font-size: 12px;
-`;
+
 /* ----------------------------- component ----------------------------- */
 function Cart({ cart, addItem, removeItem }) {
   const [buyMessage, setBuyMessage] = useState(false);
@@ -72,3 +49,27 @@ function Cart({ cart, addItem, removeItem }) {
 }
 
 export default Cart;
+/* ---------------------------------- style --------------------------------- */
+const ShoppingCart = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+`;
+const BuyButton = styled.button`
+  width: 90px;
+  height: 25px;
+  background-color: #cceec4;
+  border-radius: 8px;
+  border: 0px;
+  :hover {
+    cursor: pointer;
+    background-color: #dae5e5;
+  }
+`;
+const Message = styled.p`
+  margin: 0 auto;
+  padding: 3px;
+  font-size: 12px;
+`;

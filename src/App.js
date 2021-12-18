@@ -15,20 +15,6 @@ function App() {
   // initialize cart and set it to an empty array of objects.
   const [cart, updateCart] = useState([]);
 
-  // use localStorage
-  // useEffect(() => {
-  //   // checking if localStorage has a "hasVisited" key
-  //   if (localStorage.getItem("cart")){
-  //       // setting the state of welcomeMessage to "Welcome back!" if it does
-  //     setWelcomeMessage("Welcome back!")
-  //   } else {
-  //       // creating the "hasVisited" key value pair in localStorage if it doesn't exist
-  //     localStorage.setItem("hasVisited", "true")
-  //   }
-  //   // we are only running this useEffect on the first render of app because we passed an
-  //   // empty array
-  // },[])
-
   // adds item to shopping cart.
   function addItem(item) {
     const itemIndex = cart.findIndex((cartItem) => cartItem.id === item.id);
@@ -79,5 +65,3 @@ function App() {
 }
 
 export default App;
-// Switch is where you want your components to render using
-// react-router.

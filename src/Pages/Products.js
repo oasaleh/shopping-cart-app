@@ -5,16 +5,7 @@ import styled from 'styled-components';
 import ItemCard from '../Components/ProductCard';
 // data
 import items from '../Items';
-/* ------------------------- styled-components ------------------------- */
-const ShowCase = styled.div`
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-`;
+
 /* ----------------------------- component ----------------------------- */
 function Products({ addItem }) {
   const products = items.map((item) => (
@@ -24,3 +15,14 @@ function Products({ addItem }) {
 }
 
 export default Products;
+
+/* ---------------------------------- style --------------------------------- */
+const ShowCase = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+`;
