@@ -16,6 +16,7 @@ function Main({ cart, addItem, removeItem }) {
         alignItems: 'center',
         maxWidth: '1500px',
         height: '100%',
+        margin: 'auto',
       }}
       className="mainWindow"
     >
